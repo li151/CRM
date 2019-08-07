@@ -1,0 +1,35 @@
+
+create table Affiche(             --公告管理
+	afficheID Int primary key  IDENTITY   (1,1) ,    --编号
+	title  varchar(50) not null,  --标题
+	Content  varchar(3000) not null,--内容
+	addtime  varchar(100) not null,      --添加时间
+	affichetype  varchar(10) not null,    --公告类型
+	afficheuser  varchar(20) not null,    --创建人
+);
+
+
+
+create table customer(            --客户信息表
+	customerid int primary key IDENTITY   (1,1),	  --编号主键
+	customername varchar(50) not null, --客户名称
+	shortid   varchar(60),       --客户类型类别
+	linkid  varchar(20),       --客户级别   公海池之类的区分  
+	addtime  varchar(100),             --信息创建时间 改成了varchar型 
+	eproperty varchar(100),    --企业性质
+	telephone varchar(30),     --电话  手机
+	fax     varchar(20),       --传真
+	functionary  varchar(50),  --公司负责人
+	province    varchar(20),   --所在省份
+	city   varchar(20),        --所在市
+	industry  varchar(50), 	   --行业
+	dealproject  varchar(50),  --经营项目
+	linkman     varchar(20),    --公司联系人
+	linkphone   varchar(20),    --联系人电话
+	linkaddress  varchar(200),  --企业地址
+	email   varchar(20),   --企业邮箱
+	linktype  varchar(50), --客户性质
+);
+
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于日程管理-->
+
+<mapper namespace="com.web.mapper.RCGLdao">
+    <!--添加日程管理-->
+    <insert id="insertrcgl" parameterType="com.web.model.RCGL">
+        INSERT INTO RCGL(rcmc,kssj,jssj,rcnr,qtgz,qwdd,cjr)
+        VALUES (#{rcmc},#{kssj},#{jssj},#{rcnr},#{qtgz},#{qwdd},#{cjr})
+    </insert>
+
+    <!--该语句用于查询日程管理-->
+    <select id="selectrcgl" parameterType="com.web.model.RCGL" resultType="com.web.model.RCGL">
+        SELECT * FROM RCGL WHERE cjr=#{cjr}
+    </select>
+
+    <!--该语句用于删除日程-->
+    <delete id="deletercgl" parameterType="com.web.model.RCGL">
+        DELETE FROM RCGL WHERE rcmc=#{rcmc} AND cjr=#{cjr}
+    </delete>
+</mapper>
+

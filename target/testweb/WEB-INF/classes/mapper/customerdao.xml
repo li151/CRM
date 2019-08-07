@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于客户信息界面-->
+<!---->
+<mapper namespace="com.web.mapper.customerdao">
+    <!--这条语句用于插入客户信息-->
+    <insert id="insertcustom" parameterType="com.web.model.customer">
+        INSERT INTO customer(customername,shortid,linkid,addtime,eproperty,telephone,fax,functionary,province,city,industry,dealproject,linkman,linkphone,linkaddress,email,linktype)
+        VALUES (#{customername},#{shortid},#{linkid},#{addtime},#{eproperty},#{telephone},#{fax},#{functionary},#{province},#{city},#{industry},#{dealproject},#{linkman},#{linkphone},#{linkaddress},#{email},#{linktype})
+    </insert>
+    <!--该条语句用于查询客户信息-->
+    <select id="selectcustom" resultType="com.web.model.customer">
+        SELECT * FROM customer
+    </select>
+    <!--该语句用于条件查询-->
+    <select id="selecttjcx" parameterType="com.web.model.customer" resultType="com.web.model.customer">
+        SELECT * FROM customer WHERE shortid=#{shortid}
+    </select>
+
+    <!--删除用户,根据一定的条件进行删除-->
+    <delete id="deletetjsc" parameterType="com.web.model.customer">
+        DELETE FROM customer WHERE customername=#{customername}
+    </delete>
+
+    <!--删除用户-->
+    <delete id="deletetsc" parameterType="com.web.model.customer">
+        DELETE FROM customer WHERE customername=#{customername}
+    </delete>
+
+    <!--查询用户详细信息,编辑用户信息-->
+    <select id="seyhxx" parameterType="com.web.model.customer" resultType="com.web.model.customer">
+        SELECT * FROM customer WHERE customername=#{customername}
+    </select>
+
+    <!--更新编辑用户信息用户-->
+    <update id="upyhxx" parameterType="com.web.model.customer">
+        UPDATE customer SET customername=#{customername},shortid=#{shortid},linkid=#{linkid},addtime=#{addtime},eproperty=#{eproperty},telephone=#{telephone},fax=#{fax},functionary=#{functionary},province=#{province},city=#{city},industry=#{industry},dealproject=#{dealproject},linkman=#{linkman},linkphone=#{linkphone},linkaddress=#{linkaddress},email=#{email},linktype=#{linktype}
+        WHERE customername=#{customername}
+    </update>
+
+    <!--用于条件查询-->
+    <select id="khtjcx" parameterType="com.web.model.customer" resultType="com.web.model.customer">
+        SELECT * FROM customer WHERE 1=1
+        <if test="shortid !=null and shortid !=''">
+            AND shortid=#{shortid}
+        </if>
+        <!--客户名称-->
+        <if test="customername !=null and customername !=''">
+            AND customername=#{customername}
+        </if>
+        <!--地区-->
+        <if test="city !=null and city !=''">
+            AND city=#{city}
+        </if>
+        <!--负责人-->
+        <if test="functionary !=null and functionary !=''">
+            AND functionary=#{functionary}
+        </if>
+        <!--行业-->
+        <if test="industry !=null and industry !=''">
+            AND industry=#{industry}
+        </if>
+        <!--联系人-->
+        <if test="linkman !=null and linkman !=''">
+            AND linkman=#{linkman}
+        </if>
+        <!--查询日期-->
+        <if test=" startTime!=null and startTime!=''">
+            AND addtime &gt;= #{startTime}
+        </if>
+        <if test=" endTime!=null and endTime!=''">
+            AND addtime &lt;= #{endTime}
+        </if>
+
+    </select>
+
+    <!--查询客户信息-->
+    <select id="cxkhxx" parameterType="com.web.model.customer" resultType="com.web.model.customer">
+        SELECT * FROM customer WHERE customername=#{customername}
+    </select>
+
+</mapper>
+

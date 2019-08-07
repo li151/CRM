@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于客户联系信息-->
+
+<mapper namespace="com.web.mapper.KHLXXXdao">
+    <!--添加客户连心信息-->
+    <insert id="insertkhlxxx" parameterType="com.web.model.KHLXXX">
+        INSERT INTO KHLXXX(khxm,xb,jg,gsbm,drzw,yddh,bgdh,khyx,cggzd,xg,yxl,zt)
+        VALUES (#{khxm},#{xb},#{jg},#{gsbm},#{drzw},#{yddh},#{bgdh},#{khyx},#{cggzd},#{xg},#{yxl},#{zt})
+    </insert>
+    <!--该条语句用于查询客户联系信息-->
+    <select id="selectkhlxxx" resultType="com.web.model.KHLXXX">
+        SELECT * FROM KHLXXX
+    </select>
+    <!--用于删除联系人信息-->
+    <delete id="deletelxrxx" parameterType="com.web.model.KHLXXX">
+        DELETE FROM KHLXXX WHERE khxm=#{khxm}
+    </delete>
+</mapper>
+

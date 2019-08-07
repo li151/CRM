@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于服务报告-->
+<!---->
+<mapper namespace="com.web.mapper.FWBGdao">
+     <!--用于添加服务报告-->
+    <insert id="insertfwbg" parameterType="com.web.model.FWBG">
+        INSERT INTO FWBG(khwt,khmc,fwrxm,fwlx,fwdd,fwjd,fwjb,wtsj,fwsj,wtzt,tjr,tjsj)
+        VALUES (#{khwt},#{khmc},#{fwrxm},#{fwlx},#{fwdd},#{fwjd},#{fwjb},#{wtsj},#{fwsj},#{wtzt},#{tjr},#{tjsj})
+    </insert>
+    <!--该条语句用于查询服务报告-->
+    <select id="selectfwbg" resultType="com.web.model.FWBG">
+        SELECT * FROM FWBG
+    </select>
+    <!--该条语句用于删除服务报告-->
+    <delete id="deletefwbg" parameterType="com.web.model.FWBG">
+        DELETE FROM FWBG WHERE khwt=#{khwt}
+    </delete>
+
+</mapper>
+

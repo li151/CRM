@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于记事本页面-->
+
+<mapper namespace="com.web.mapper.notbookdao">
+    <!--添加个人记事本-->
+    <insert id="insertgrjs" parameterType="com.web.model.notbook">
+        INSERT INTO notbook(jsbt,createuser,context,addtime)
+        VALUES (#{jsbt},#{createuser},#{context},#{addtime})
+    </insert>
+
+    <!--该条语句用于查询个人记事本-->
+    <select id="selectgrjsb" parameterType="com.web.model.notbook" resultType="com.web.model.notbook">
+        SELECT * FROM notbook WHERE createuser=#{createuser}
+    </select>
+    <!--该条语句用于删除个人记事本-->
+    <delete id="deletejsb" parameterType="com.web.model.notbook">
+        DELETE FROM notbook WHERE jsbt=#{jsbt} AND createuser=#{createuser}
+    </delete>
+</mapper>
+

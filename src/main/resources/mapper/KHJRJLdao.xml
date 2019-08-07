@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于客户节日记录-->
+
+<mapper namespace="com.web.mapper.KHJRJLdao">
+    <!--添加客户节日记录-->
+    <insert id="insertkhjrjl" parameterType="com.web.model.KHJRJL">
+        INSERT INTO KHJRJL(khxm,zpry,zysx,ghsj,ghms,jrlx,tjsj,tjr)
+        VALUES (#{khxm},#{zpry},#{zysx},#{ghsj},#{ghms},#{jrlx},#{tjsj},#{tjr})
+    </insert>
+    <!--查询客户节日记录-->
+    <select id="selectkhjrjl" resultType="com.web.model.KHJRJL">
+        SELECT * FROM KHJRJL
+    </select>
+    <!--用于删除客户节日记录-->
+    <delete id="deletekhjrjl" parameterType="com.web.model.KHJRJL">
+        DELETE FROM KHJRJL WHERE khxm=#{khxm}
+    </delete>
+
+</mapper>
+

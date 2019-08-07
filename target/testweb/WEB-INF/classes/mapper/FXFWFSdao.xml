@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于分享服务方式-->
+<!---->
+<mapper namespace="com.web.mapper.FXFWFSdao">
+    <!--用于添加分享服务报告-->
+    <insert id="insertfxfwbg" parameterType="com.web.model.FXFWFS">
+        INSERT INTO FXFWFS(fxfwmc,fwdx,fwnr,khxhd,tjr,tjsj)
+        VALUES (#{fxfwmc},#{fwdx},#{fwnr},#{khxhd},#{tjr},#{tjsj})
+    </insert>
+    <!--该条语句用于查询服务方式分享-->
+    <select id="selectfwfs" resultType="com.web.model.FXFWFS">
+        SELECT * FROM FXFWFS
+    </select>
+
+    <!--分享服务名称-->
+    <delete id="deletefx" parameterType="com.web.model.FXFWFS">
+        DELETE FROM FXFWFS WHERE fxfwmc=#{fxfwmc}
+    </delete>
+</mapper>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于常见问题库页面-->
+<!---->
+<mapper namespace="com.web.mapper.CJWTKdao">
+    <!--该语句用于插入常见问题-->
+    <insert id="insertcjwt" parameterType="com.web.model.CJWTK">
+        INSERT INTO CJWTK(wtms,jjff,jjr,wtkssj,wtjjsj,tjr,tjsj) VALUES (#{wtms},#{jjff},#{jjr},#{wtkssj},#{wtjjsj},#{tjr},#{tjsj})
+    </insert>
+    <!--该条语句用于查询常见问题库-->
+    <select id="selectcjwt" resultType="com.web.model.CJWTK">
+        SELECT * FROM CJWTK
+    </select>
+
+    <!--用于删除常见问题库-->
+    <delete id="deletewtk" parameterType="com.web.model.CJWTK">
+        DELETE FROM CJWTK WHERE wtms=#{wtms}
+    </delete>
+</mapper>
+

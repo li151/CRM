@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于用户的交流记录-->
+<!---->
+<mapper namespace="com.web.mapper.linkdao">
+    <!--用于查询可交流记录-->
+    <select id="selectjljl" parameterType="com.web.model.link" resultType="com.web.model.link">
+        SELECT * FROM link WHERE customerid=#{customerid}
+    </select>
+    <!--该语句用于添加客户交流记录-->
+    <insert id="insertjljl" parameterType="com.web.model.link">
+        INSERT INTO link(customerid,linktext,addtime,adduser) VALUES (#{customerid},#{linktext},#{addtime},#{adduser})
+    </insert>
+</mapper>
+

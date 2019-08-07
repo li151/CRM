@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于潜在客户信息-->
+<!---->
+<mapper namespace="com.web.mapper.QXGLdao">
+    <!--该语句用于查询权限-->
+    <select id="selectqxgl" parameterType="com.web.model.QXGL" resultType="com.web.model.QXGL">
+        SELECT * FROM QXGL WHERE username=#{username}
+    </select>
+    <!--用于插入该用户权限-->
+    <insert id="insertqxgl" parameterType="com.web.model.QXGL">
+        INSERT INTO QXGL (username,zygl ,tjgg ,scgg ,yhxx, tjyh,scyh,yhqx ,ghc,tjkh ,sckh ,dcsj ,zykh ,hxkh ,ptkh ,khxx ,qzkhgl ,scqzkh ,fwbg ,scfwbg ,cjwtk,sccjwtk ,fxfwfs ,scfxfwfs ,yxhd ,scyxhd ,scfx ,scscfx ,khjrjl ,sckhjrjl ,khlxxx ,sckhlxxx)
+        VALUES (#{username},#{zygl} ,#{tjgg} ,#{scgg} ,#{yhxx}, #{tjyh},#{scyh},#{yhqx} ,#{ghc},#{tjkh} ,#{sckh} ,#{dcsj} ,#{zykh} ,#{hxkh} ,#{ptkh} ,#{khxx} ,#{qzkhgl} ,#{scqzkh} ,#{fwbg} ,#{scfwbg} ,#{cjwtk},#{sccjwtk} ,#{fxfwfs} ,#{scfxfwfs} ,#{yxhd} ,#{scyxhd},#{scfx} ,#{scscfx}, #{khjrjl} ,#{sckhjrjl} ,#{khlxxx} ,#{sckhlxxx})
+    </insert>
+
+    <!--更新该用户权限-->
+    <update id="updateqxgl" parameterType="com.web.model.QXGL">
+        UPDATE QXGL SET zygl=#{zygl} ,tjgg=#{tjgg} ,scgg=#{scgg} ,yhxx=#{yhxx}, tjyh=#{tjyh},scyh=#{scyh},yhqx=#{yhqx} ,ghc=#{ghc},tjkh=#{tjkh} ,sckh=#{sckh} ,dcsj=#{dcsj} ,zykh=#{zykh} ,hxkh=#{hxkh} ,ptkh=#{ptkh} ,khxx=#{khxx} ,qzkhgl=#{qzkhgl} ,scqzkh=#{scqzkh} ,fwbg=#{fwbg} ,scfwbg=#{scfwbg} ,cjwtk=#{cjwtk},sccjwtk=#{sccjwtk} ,fxfwfs=#{fxfwfs} ,scfxfwfs=#{scfxfwfs} ,yxhd=#{yxhd} ,scyxhd=#{scyxhd},scfx=#{scfx} ,scscfx=#{scscfx} ,khjrjl=#{khjrjl} ,sckhjrjl=#{sckhjrjl} ,khlxxx=#{khlxxx} ,sckhlxxx=#{sckhlxxx}
+        WHERE username=#{username}
+    </update>
+    <!--删除用户权限-->
+    <delete id="deleteqxgl" parameterType="com.web.model.QXGL">
+        DELETE FROM QXGL WHERE username=#{username}
+    </delete>
+
+</mapper>
+

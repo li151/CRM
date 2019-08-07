@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于营销活动-->
+<!---->
+<mapper namespace="com.web.mapper.YXHDdao">
+    <!--添加营销活动-->
+    <insert id="insertyxhd" parameterType="com.web.model.YXHD">
+        INSERT INTO YXHD(hdzt,jhsj,hdkzdd,txcp,hdys,jhxse,phry,jhkzts,hdbz,hdfzr)
+        VALUES (#{hdzt},#{jhsj},#{hdkzdd},#{txcp},#{hdys},#{jhxse},#{phry},#{jhkzts},#{hdbz},#{hdfzr})
+    </insert>
+
+    <!--该条语句用于查询营销活动-->
+    <select id="selectyxhd" resultType="com.web.model.YXHD">
+        SELECT * FROM YXHD
+    </select>
+
+    <!--用于删除营销活动-->
+    <delete id="deleteyxhd" parameterType="com.web.model.YXHD">
+        DELETE FROM YXHD WHERE hdzt=#{hdzt}
+    </delete>
+</mapper>
+

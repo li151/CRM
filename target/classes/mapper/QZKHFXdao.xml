@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于潜在客户信息-->
+<!---->
+<mapper namespace="com.web.mapper.QZKHFXdao">
+    <!--查询所有的客户分析记录-->
+    <select id="selectfxjl" parameterType="com.web.model.QZKHFX" resultType="com.web.model.QZKHFX" >
+        SELECT * FROM QZKHFX WHERE khmc=#{khmc}
+    </select>
+
+    <!--插入客户分析记录-->
+    <insert id="insertfxjl" parameterType="com.web.model.QZKHFX">
+        INSERT INTO QZKHFX(khmc,jljl,tjsj,tjr) VALUES (#{khmc},#{jljl},#{tjsj},#{tjr})
+    </insert>
+
+</mapper>
+

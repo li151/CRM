@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于市场分析-->
+
+<mapper namespace="com.web.mapper.SCFXdao">
+    <!--添加市场分析-->
+    <insert id="insertscfx" parameterType="com.web.model.SCFX">
+        INSERT INTO SCFX(fxzt,fxnr,fxr,fxsj,fxfj)
+        VALUES (#{fxzt},#{fxnr},#{fxr},#{fxsj},#{fxfj})
+    </insert>
+
+    <!--该条语句用于查询市场分析-->
+    <select id="selectscfx" resultType="com.web.model.SCFX">
+        SELECT * FROM SCFX
+    </select>
+
+    <!--用于添加市场分析-->
+    <delete id="deletescfx" parameterType="com.web.model.SCFX">
+        DELETE FROM SCFX WHERE fxzt=#{fxzt}
+    </delete>
+</mapper>
+

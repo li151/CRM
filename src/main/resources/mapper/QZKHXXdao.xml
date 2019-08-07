@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于潜在客户信息-->
+<!---->
+<mapper namespace="com.web.mapper.QZKHXXdao">
+    <!--查询所有潜在客户信息-->
+    <select id="selectqzkhxx" resultType="com.web.model.QZKHXX">
+        SELECT * FROM QZKHXX
+    </select>
+    <!--用于插入潜在客户信息-->
+    <insert id="insertqzkhxx" parameterType="com.web.model.QZKHXX">
+        INSERT INTO QZKHXX (khmc,khlx ,tjrq ,dh , cz ,fzr ,dq ,hy ,jyxm ,lxr ,qydz ,yx,qyxz)
+        VALUES (#{khmc},#{khlx} ,#{tjrq} ,#{dh} ,#{cz} ,#{fzr} ,#{dq} ,#{hy} ,#{jyxm} ,#{lxr} ,#{qydz} ,#{yx},#{qyxz})
+    </insert>
+    <!--删除潜在客户记录-->
+    <delete id="deleteqzkhxx" parameterType="com.web.model.QZKHXX">
+        DELETE FROM QZKHXX WHERE khmc=#{khmc}
+    </delete>
+</mapper>
+

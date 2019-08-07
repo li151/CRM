@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--该xml文件用于系统公告查询-->
+
+<mapper namespace="com.web.mapper.Affichedao">
+    <select id="selectaff" resultType="com.web.model.Affiche">
+        SELECT * FROM Affiche
+    </select>
+
+    <insert id="insertgg" parameterType="com.web.model.Affiche">
+        INSERT INTO Affiche(title,Content,addtime,affichetype,afficheuser)
+        VALUES (#{title},#{Content},#{addtime},#{affichetype},#{afficheuser})
+    </insert>
+
+    <!--用于公告的前端查询,已经没有用了-->
+    <select id="selecttjcx" parameterType="com.web.model.Affiche" resultType="com.web.model.Affiche">
+        SELECT * FROM Affiche WHERE affichetype=#{affichetype}
+    </select>
+    <!--用于删除公告-->
+    <delete id="deletegg" parameterType="com.web.model.Affiche">
+        DELETE  FROM Affiche WHERE title=#{title}
+    </delete>
+    <!--用于查询不同类型的公告 sql server 使用-->
+    <!--<select id="selecttjgg" parameterType="com.web.model.Affiche" resultType="com.web.model.Affiche">-->
+        <!--SELECT TOP 1 * FROM Affiche WHERE affichetype=#{affichetype} ORDER BY addtime DESC-->
+    <!--</select>-->
+
+    <select id="selecttjgg" parameterType="com.web.model.Affiche" resultType="com.web.model.Affiche">
+        SELECT  * FROM Affiche WHERE affichetype=#{affichetype} ORDER BY addtime DESC LIMIT 1
+    </select>
+</mapper>
+

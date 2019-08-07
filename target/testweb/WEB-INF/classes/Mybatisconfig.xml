@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <mappers>
+        <!--这里一定要写斜杠-->
+        <mapper resource="mapper/Userdao.xml"/>
+        <mapper resource="mapper/Affichedao.xml"/>
+        <mapper resource="mapper/CJWTKdao.xml"/>
+        <mapper resource="mapper/customerdao.xml"/>
+        <mapper resource="mapper/FWBGdao.xml"/>
+        <mapper resource="mapper/FXFWFSdao.xml"/>
+        <mapper resource="mapper/KHJRJLdao.xml"/>
+        <mapper resource="mapper/KHLXXXdao.xml"/>
+        <mapper resource="mapper/notbookdao.xml"/>
+        <mapper resource="mapper/RCGLdao.xml"/>
+        <mapper resource="mapper/SCFXdao.xml"/>
+        <mapper resource="mapper/YXHDdao.xml"/>
+        <mapper resource="mapper/linkdao.xml"/>
+        <mapper resource="mapper/QZKHXXdao.xml"/>
+        <mapper resource="mapper/QZKHFXdao.xml"/>
+        <mapper resource="mapper/QXGLdao.xml"/>
+    </mappers>
+</configuration>
