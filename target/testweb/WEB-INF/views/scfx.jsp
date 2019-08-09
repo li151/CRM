@@ -68,7 +68,7 @@
                 <td>${web.fxnr}</td>
                 <td>${web.fxr}</td>
                 <td>${web.fxsj}</td>
-                <td>${web.fxfj}</td>
+                <td><a href="${pageContext.request.contextPath}/scfx/filedownload?scfx=${web.fxfj}">${web.fxfj}</a></td>
             </tr>
         </c:forEach>
         </tbody>
@@ -124,6 +124,11 @@
     /*管理员-增加*/
     function admin_add(title,url,w,h){
         layer_show(title,url,w,h);
+    }
+
+    /*下载文件*/
+    function filedownload (filname) {
+        alert(filname);
     }
     /*管理员-删除*/
     function admin_del(){

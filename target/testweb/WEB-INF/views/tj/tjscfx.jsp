@@ -34,6 +34,7 @@
 <article class="page-container">
     <%--这里是添加公告--%>
     <form class="form form-horizontal" enctype="multipart/form-data" id="form-admin-add" action="${pageContext.request.contextPath}/scfx/insertscfx" method="post">
+        <h5 style="color: red;text-align: center">上传文件不要超过5M</h5>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>分析主题：</label>
             <div class="formControls col-xs-8 col-sm-9">
@@ -66,9 +67,9 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3"> 分析附件：</label>
             <div class="formControls col-xs-8 col-sm-9"> <span class="btn-upload form-group">
-				<input class="input-text upload-url" type="text" name="uploadfile" id="uploadfile" readonly nullmsg="请添加附件！" style="width:200px">
+				<input class="input-text upload-url" type="text" name="fxfj" id="uploadfile" readonly nullmsg="请添加附件！" style="width:200px">
 				<a href="javascript:void();" class="btn btn-primary radius upload-btn"><i class="Hui-iconfont">&#xe642;</i> 浏览文件</a>
-				<input type="file" multiple name="file-2" class="input-file">
+                <input type="file" multiple name="fxfj" class="input-file">
 				</span> </div>
         </div>
 
@@ -89,7 +90,7 @@
                 <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
             </div>
             <div class="modal-body">
-                <p id="msg1" style="color: red"></p>
+                <div id="msg1" style="color: red"></div>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">确定</button>
