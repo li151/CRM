@@ -6,36 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd112113-35ed-4a7b-b9d6-9789540ed354" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/190807153721.psc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm/crm.war" afterPath="$PROJECT_DIR$/out/artifacts/crm/crm.war" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web/controller/SCFXController.java" afterPath="$PROJECT_DIR$/src/main/java/com/web/controller/SCFXController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/scfx.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/scfx.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tj/tjscfx.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tj/tjscfx.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/H-ui.login.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/css/H-ui.login.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/admin-login-bg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/admin-loginform-bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/h-ui.admin/images/um.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Mybatisconfig.xml" afterPath="$PROJECT_DIR$/target/classes/Mybatisconfig.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/web/controller/SCFXController.class" afterPath="$PROJECT_DIR$/target/classes/com/web/controller/SCFXController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change beforePath="$PROJECT_DIR$/target/testweb.war" afterPath="$PROJECT_DIR$/target/testweb.war" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/WEB-INF/classes/Mybatisconfig.xml" afterPath="$PROJECT_DIR$/target/testweb/WEB-INF/classes/Mybatisconfig.xml" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/WEB-INF/classes/com/web/controller/SCFXController.class" afterPath="$PROJECT_DIR$/target/testweb/WEB-INF/classes/com/web/controller/SCFXController.class" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/testweb/WEB-INF/classes/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/testweb/WEB-INF/classes/spring-mvc.xml" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/WEB-INF/views/main.jsp" afterPath="$PROJECT_DIR$/target/testweb/WEB-INF/views/main.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/WEB-INF/views/scfx.jsp" afterPath="$PROJECT_DIR$/target/testweb/WEB-INF/views/scfx.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/WEB-INF/views/tj/tjscfx.jsp" afterPath="$PROJECT_DIR$/target/testweb/WEB-INF/views/tj/tjscfx.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/static/h-ui.admin/css/H-ui.login.css" afterPath="$PROJECT_DIR$/target/testweb/static/h-ui.admin/css/H-ui.login.css" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/static/h-ui.admin/images/admin-login-bg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/testweb/static/h-ui.admin/images/um.gif" afterPath="" />
-    </list>
+    <list default="true" id="fd112113-35ed-4a7b-b9d6-9789540ed354" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +36,8 @@
             <state relative-caret-position="228">
               <caret line="70" column="81" lean-forward="false" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="81" />
               <folding>
-                <marker date="1565315174042" expanded="true" signature="8157:8177" ph="..." />
-                <marker date="1565315174042" expanded="true" signature="8203:8211" ph="&amp;##xe631;" />
+                <marker date="1565318194350" expanded="true" signature="8157:8177" ph="..." />
+                <marker date="1565318194350" expanded="true" signature="8203:8211" ph="&amp;##xe631;" />
               </folding>
             </state>
           </provider>
@@ -262,7 +233,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="969" />
     <option name="width" value="960" />
     <option name="height" value="1032" />
@@ -464,7 +435,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://G:/xiankehuguanli/web/src/main/resources/mapper/QXGLdao.xml&#10;loginWraper&#9;null&#9;null&#10;Wselday&#9;null&#9;null&#10;MTitle&#9;null&#9;null&#10;Mtitle&#9;null&#9;null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -740,12 +711,12 @@
       <workItem from="1561038427036" duration="5759000" />
       <workItem from="1565183915236" duration="2786000" />
       <workItem from="1565268939667" duration="612000" />
-      <workItem from="1565307654770" duration="9540000" />
+      <workItem from="1565307654770" duration="10247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="395940000" />
+    <option name="totallyTimeSpent" value="396647000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,7 +728,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1149,8 +1120,8 @@
         <state relative-caret-position="228">
           <caret line="70" column="81" lean-forward="false" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="81" />
           <folding>
-            <marker date="1565315174042" expanded="true" signature="8157:8177" ph="..." />
-            <marker date="1565315174042" expanded="true" signature="8203:8211" ph="&amp;##xe631;" />
+            <marker date="1565318194350" expanded="true" signature="8157:8177" ph="..." />
+            <marker date="1565318194350" expanded="true" signature="8203:8211" ph="&amp;##xe631;" />
           </folding>
         </state>
       </provider>
