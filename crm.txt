@@ -1,4 +1,5 @@
 
+
 create table Affiche(             --公告管理
 	afficheID Int primary key  IDENTITY   (1,1) ,    --编号
 	title  varchar(50) not null,  --标题
